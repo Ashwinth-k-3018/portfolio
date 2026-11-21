@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2.3">
+  <link rel="stylesheet" href="css/style.css?v=2.4">
 </head>
 <body>
 
@@ -1067,77 +1067,71 @@
        11. RESUME MODAL & PRINT VIEW
        =================================================================== -->
   <div class="modal-overlay" id="resumeModal">
-    <div class="modal-dialog" style="max-width: 900px;">
-      <div class="modal-header">
+    <div class="modal-dialog resume-modal-dialog">
+      <div class="modal-header resume-modal-header">
         <div class="modal-title-box">
-          <span class="project-cat-badge cat-springboot" style="margin-bottom: 6px; display: inline-block;">UPDATED RESUME &bull; STACKLY PLACEMENT</span>
-          <h3>Ashwinth K &ndash; Resume Preview</h3>
+          <span class="project-cat-badge cat-springboot resume-modal-pill">STACKLY PLACEMENT &bull; UPDATED 2026</span>
+          <h3 class="resume-modal-title">Ashwinth K &ndash; Resume</h3>
         </div>
-        <div style="display: flex; gap: 10px; align-items: center;">
-          <a href="resume.html" target="_blank" class="btn btn-primary btn-sm">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Printable View
+        <div class="resume-modal-actions">
+          <a href="resume.html" target="_blank" class="btn btn-primary btn-sm resume-open-print-btn">
+            <i class="fa-solid fa-print"></i> <span>Open Printable View (2 Pages)</span>
           </a>
-          <button class="modal-close-btn" onclick="closeResumeModal()">
+          <button class="modal-close-btn" onclick="closeResumeModal()" aria-label="Close modal">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
       </div>
 
-      <div class="modal-body" style="background: #090d16; padding: 24px;">
-        <div style="background: #ffffff; color: #1e293b; padding: 36px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); font-family: 'Inter', sans-serif;">
+      <div class="modal-body resume-modal-body">
+        <div class="resume-modal-paper">
           
           <!-- Resume Header -->
-          <div style="border-bottom: 2px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; text-align: left;">
-            <div style="width: 74px; height: 74px; border-radius: 50%; overflow: hidden; border: 2.5px solid #0284c7; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center;">
-              <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: scale(1.05); display: block;">
+          <div class="resume-paper-header">
+            <div class="resume-paper-avatar">
+              <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K">
             </div>
-            <div>
-              <h1 style="font-size: 1.8rem; color: #0f172a; letter-spacing: -0.02em; margin-bottom: 4px;">ASHWINTH K</h1>
-              <p style="font-size: 0.88rem; color: #475569; font-weight: 500;">
+            <div class="resume-paper-intro">
+              <h1>ASHWINTH K</h1>
+              <p class="resume-paper-contact">
                 <strong>Java Full Stack Developer</strong> &bull; Chennai, India<br>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" style="color: #0284c7;">ashwinthkumar003@gmail.com</a> &bull; +91 7339053147<br>
-                <a href="https://github.com/Ashwinth-k-3018" target="_blank" style="color: #0284c7;">github.com/Ashwinth-k-3018</a> &bull; 
-                <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" style="color: #0284c7;">linkedin.com/in/ashwinth-k-91616529b</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank">ashwinthkumar003@gmail.com</a> &bull; +91 7339053147<br>
+                <a href="https://github.com/Ashwinth-k-3018" target="_blank">github.com/Ashwinth-k-3018</a> &bull; 
+                <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank">linkedin.com/in/ashwinth-k-91616529b</a>
               </p>
             </div>
           </div>
 
-          <!-- Professional Objective -->
-          <div style="margin-bottom: 18px;">
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Professional Summary
-            </h3>
-            <p style="font-size: 0.88rem; color: #334155; line-height: 1.55;">
-              Java Full Stack Developer placed at <strong>Stackly</strong>, with solid experience developing enterprise RESTful microservices, transactional JDBC backends, and normalized MySQL schemas. Strong foundation in Core Java (OOPs, Collections, Multithreading, Exception Handling), Spring Boot, Spring Data JPA, and modern web technologies. Eager to contribute to scalable engineering environments and freelance initiatives.
+          <!-- Professional Summary -->
+          <div class="resume-paper-section">
+            <h3 class="resume-paper-heading">Professional Summary</h3>
+            <p class="resume-paper-text">
+              Results-driven <strong>Java Full Stack Developer</strong> placed at <strong>Stackly</strong>, with deep expertise in architecting high-scale <strong>Spring Boot REST microservices</strong>, transactional <strong>JDBC engines</strong>, and normalized <strong>MySQL database architectures</strong>. Proficient across Core Java (OOPs, Collections, Multithreading, Exception Handling), Spring Data JPA/Hibernate, SQL tuning, and responsive front-end technologies.
             </p>
           </div>
 
-          <!-- Skills -->
-          <div style="margin-bottom: 18px;">
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Technical Skills
-            </h3>
-            <div style="font-size: 0.86rem; color: #334155; line-height: 1.6;">
-              <strong>Programming &amp; Core:</strong> Java (8/11/17/21), OOPs, Collections Framework, Multithreading, Exception Handling, File I/O.<br>
-              <strong>Java Technologies &amp; Frameworks:</strong> Spring Boot, Spring Data JPA, Hibernate, JDBC, JSP, Servlets, RESTful APIs, Spring Security &amp; JWT.<br>
-              <strong>Databases:</strong> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID).<br>
-              <strong>Web &amp; Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive Web Design, Bootstrap.<br>
-              <strong>Tools &amp; Practices:</strong> Git, GitHub, Maven, Postman, Eclipse, VS Code, Agile/Scrum, MVC Architecture.
+          <!-- Technical Skills -->
+          <div class="resume-paper-section">
+            <h3 class="resume-paper-heading">Technical Skills</h3>
+            <div class="resume-paper-text">
+              <p><strong>Programming &amp; Core:</strong> Java (8/11/17/21), OOPs, Collections Framework, Multithreading, Exception Handling, File I/O.</p>
+              <p><strong>Java Technologies &amp; Frameworks:</strong> Spring Boot, Spring Data JPA, Hibernate, JDBC, JSP, Servlets, RESTful APIs, Spring Security &amp; JWT.</p>
+              <p><strong>Databases:</strong> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID).</p>
+              <p><strong>Web &amp; Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive Web Design, Bootstrap.</p>
+              <p><strong>Tools &amp; Practices:</strong> Git, GitHub, Maven, Postman, Eclipse, VS Code, Agile/Scrum, MVC Architecture.</p>
             </div>
           </div>
 
           <!-- Work Experience -->
-          <div style="margin-bottom: 18px;">
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Work Experience
-            </h3>
+          <div class="resume-paper-section">
+            <h3 class="resume-paper-heading">Work Experience</h3>
             
-            <div style="margin-bottom: 12px;">
-              <div style="display: flex; justify-content: space-between; font-weight: bold; color: #0f172a; font-size: 0.92rem;">
-                <span>Java Full Stack Developer &ndash; Stackly</span>
-                <span>May 2025 &ndash; Present (Dec 2025) &bull; Chennai</span>
+            <div class="resume-paper-item">
+              <div class="resume-paper-item-header">
+                <span class="resume-paper-role">Java Full Stack Developer &ndash; Stackly</span>
+                <span class="resume-paper-date">May 2025 &ndash; Present (Dec 2025) &bull; Chennai</span>
               </div>
-              <ul style="margin: 6px 0 0 20px; font-size: 0.86rem; color: #334155; line-height: 1.5;">
+              <ul class="resume-paper-bullets">
                 <li>Designed and developed RESTful microservices utilizing Spring Boot and Spring Data JPA.</li>
                 <li>Optimized MySQL relational database queries, authoring stored procedures, triggers, and B-Tree indexes.</li>
                 <li>Implemented secure endpoints with Spring Security and JWT authentication tokens.</li>
@@ -1145,12 +1139,13 @@
               </ul>
             </div>
 
-            <div>
-              <div style="display: flex; justify-content: space-between; font-weight: bold; color: #0f172a; font-size: 0.92rem;">
-                <span>Intern &ndash; Gen AI Connect Summit &amp; Expo &ndash; StartNet Ventures Pvt Ltd</span>
-                <span>April 2024 &ndash; June 2024 &bull; Salem</span>
+            <div class="resume-paper-item">
+              <div class="resume-paper-item-header">
+                <span class="resume-paper-role">Intern &ndash; Gen AI Connect Summit &amp; Expo</span>
+                <span class="resume-paper-date">April 2024 &ndash; June 2024 &bull; Salem</span>
               </div>
-              <ul style="margin: 6px 0 0 20px; font-size: 0.86rem; color: #334155; line-height: 1.5;">
+              <p class="resume-paper-company">StartNet Ventures Private Limited &bull; Salem, India</p>
+              <ul class="resume-paper-bullets">
                 <li>Assisted in developing AI-based solutions leveraging Generative AI tools (HeyGen).</li>
                 <li>Collaborated in cross-functional agile teams to deliver technical project deliverables.</li>
               </ul>
@@ -1158,11 +1153,9 @@
           </div>
 
           <!-- Projects Showcase -->
-          <div style="margin-bottom: 18px;">
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Key Projects
-            </h3>
-            <div style="font-size: 0.86rem; color: #334155; line-height: 1.5;">
+          <div class="resume-paper-section">
+            <h3 class="resume-paper-heading">Key Projects</h3>
+            <div class="resume-paper-text">
               <p><strong>Libraries Book Management System:</strong> Spring Boot, Spring Data JPA, MySQL. Built book borrowing, automated overdue fine calculation, and RESTful APIs.</p>
               <p><strong>Vehicle Rent Management System:</strong> Spring Boot, Spring Security, JWT, MySQL. Role-based customer/admin vehicle leasing and billing engine.</p>
               <p><strong>Mobile Recharge Application:</strong> Spring Boot, Transaction Management, MySQL. Atomic transaction processing, plan filtering, and simulated payment gateway.</p>
@@ -1172,26 +1165,31 @@
           </div>
 
           <!-- Education -->
-          <div style="margin-bottom: 18px;">
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Education &amp; Training
-            </h3>
-            <div style="font-size: 0.86rem; color: #334155; line-height: 1.55;">
-              <p><strong>B.E. Computer Science and Engineering:</strong> Salem College of Engineering and Technology (2021 &ndash; 2025) &bull; <strong>CGPA: 8.3 / 83%</strong></p>
-              <p><strong>Java Full Stack Specialization:</strong> QSpiders, Chennai (May 2025 &ndash; Feb 2026) &bull; Core Java, Advanced Java, Spring Boot, JDBC, MySQL.</p>
-              <p><strong>Higher Secondary School (HSC):</strong> Sri Ramakrishna Boys Matric Hr. Sec School &bull; <strong>Score: 75%</strong></p>
+          <div class="resume-paper-section">
+            <h3 class="resume-paper-heading">Education &amp; Professional Training</h3>
+            <div class="resume-paper-item">
+              <div class="resume-paper-item-header">
+                <span class="resume-paper-role">B.E. &ndash; Computer Science and Engineering</span>
+                <span class="resume-paper-date">Nov 2021 &ndash; May 2025</span>
+              </div>
+              <p class="resume-paper-company">Salem College of Engineering and Technology &bull; <strong>CGPA: 8.3 / 83%</strong></p>
+            </div>
+            <div class="resume-paper-item">
+              <div class="resume-paper-item-header">
+                <span class="resume-paper-role">Java Full Stack Development Training</span>
+                <span class="resume-paper-date">May 2025 &ndash; February 2026</span>
+              </div>
+              <p class="resume-paper-company">QSpiders &bull; Chennai, India</p>
             </div>
           </div>
 
           <!-- Achievements & Honors -->
-          <div>
-            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              Achievements &amp; Hackathons
-            </h3>
-            <div style="font-size: 0.86rem; color: #334155; line-height: 1.55;">
+          <div class="resume-paper-section" style="margin-bottom: 0;">
+            <h3 class="resume-paper-heading">Achievements &amp; Languages</h3>
+            <div class="resume-paper-text">
               <p><strong>Top Brains Hackathon &ndash; 10th Place:</strong> Top Brains. Secured 10th place competing with an Advanced Java algorithmic problem-solving architecture.</p>
               <p><strong>Gen AI Connect Summit and Expo:</strong> StartNet Ventures Private Limited, Salem. Explored AI advancements and enterprise workflows.</p>
-              <p><strong>Expertise in Website Designing:</strong> Connect Infosystem, Chennai. Insight into modern responsive web design standards and practices.</p>
+              <p><strong>Languages:</strong> English (Professional Working Proficiency), Tamil (Native).</p>
             </div>
           </div>
 
