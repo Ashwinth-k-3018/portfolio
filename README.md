@@ -121,5 +121,4 @@ https://formsubmit.co/ajax/ashwinthkumar003@gmail.com
 - **LinkedIn Profile:** [https://www.linkedin.com/in/ashwinth-k-91616529b](https://www.linkedin.com/in/ashwinth-k-91616529b)
 - **Java & MySQL Projects Repo:** [https://github.com/Ashwinth-k-3018/Java_Stackly](https://github.com/Ashwinth-k-3018/Java_Stackly)
 - **Email:** [ashwinthkumar003@gmail.com](mailto:ashwinthkumar003@gmail.com)
-- **Phone:** [+91 7339053147](tel:+917339053147)
 - **Education:** B.E. Computer Science and Engineering (Salem College of Engineering & Technology, CGPA: 8.3)
