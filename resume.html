@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashwinth K - Resume | Java Full Stack Developer</title>
+  
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #334155;
+      --accent: #0284c7;
+      --border: #cbd5e1;
+      --bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--primary);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.5;
+      padding: 30px 16px;
+    }
+
+    .toolbar {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 14px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+
+    .btn-secondary {
+      background: #f1f5f9;
+      color: #334155;
+      border-color: #cbd5e1;
+    }
+
+    .btn-secondary:hover {
+      background: #e2e8f0;
+    }
+
+    .resume-sheet {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .contact-info {
+      font-size: 0.92rem;
+      color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      margin-bottom: 14px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--primary);
+    }
+
+    .item-subheader {
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    ul.bullets {
+      list-style-type: disc;
+      margin-left: 20px;
+      font-size: 0.88rem;
+      color: #334155;
+    }
+
+    ul.bullets li {
+      margin-bottom: 3px;
+    }
+
+    .skills-block {
+      font-size: 0.88rem;
+      color: #334155;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .skills-block strong {
+      color: var(--primary);
+    }
+
+    /* Print-specific layout optimization for A4 */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        padding: 24px 32px;
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .section {
+        margin-bottom: 16px;
+      }
+
+      @page {
+        margin: 1cm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Toolbar -->
+  <div class="toolbar">
+    <a href="index.html" class="btn btn-secondary">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <div style="display: flex; gap: 10px;">
+      <button onclick="window.print()" class="btn btn-primary">
+        <i class="fa-solid fa-print"></i> Print to PDF (A4)
+      </button>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <i class="fa-solid fa-envelope"></i> Open in Gmail
+      </a>
+    </div>
+  </div>
+
+  <!-- Printable Resume Paper -->
+  <main class="resume-sheet">
+    <header style="display: flex; align-items: center; justify-content: center; gap: 24px; text-align: left;">
+      <div style="width: 76px; height: 76px; border-radius: 50%; overflow: hidden; border: 2.5px solid #0284c7; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center;">
+        <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: scale(1.05); display: block;">
+      </div>
+      <div>
+        <h1 style="margin-bottom: 4px;">ASHWINTH K</h1>
+        <div class="contact-info" style="justify-content: flex-start; gap: 12px;">
+          <span><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank">ashwinthkumar003@gmail.com</a></span>
+          <span>&bull;</span>
+          <span><i class="fa-solid fa-phone"></i> +91 7339053147</span>
+          <span>&bull;</span>
+          <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank">LinkedIn</a></span>
+          <span>&bull;</span>
+          <span><i class="fa-brands fa-github"></i> <a href="https://github.com/Ashwinth-k-3018" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p style="font-size: 0.88rem; color: #334155; text-align: justify;">
+        Results-driven <strong>Java Full Stack Developer</strong> placed at <strong>Stackly</strong>, with deep expertise in architecting high-scale <strong>Spring Boot REST microservices</strong>, transactional <strong>JDBC engines</strong>, and normalized <strong>MySQL database architectures</strong>. Proficient across Core Java (OOPs, Collections, Multithreading, Exception Handling), Spring Data JPA/Hibernate, SQL tuning, and responsive front-end technologies. Proven ability to build ACID-compliant, secure web applications for enterprise clients and freelance requirements.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-block">
+        <div><strong>Programming Languages:</strong> Java (8/11/17/21), JavaScript (ES6+), SQL, HTML5, CSS3</div>
+        <div><strong>Backend Frameworks &amp; APIs:</strong> Spring Boot, Spring Data JPA, Hibernate ORM, JDBC, Servlets, JSP, RESTful APIs, Spring Security &amp; JWT, Microservices Architecture</div>
+        <div><strong>Database &amp; Storage:</strong> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID Transactions, HikariCP Connection Pooling)</div>
+        <div><strong>Core Computer Science:</strong> Object-Oriented Programming (OOPs), Data Structures, Collections Framework, Multithreading, Exception Handling, MVC Design Pattern</div>
+        <div><strong>Tools &amp; Version Control:</strong> Git, GitHub, Maven, Postman, Eclipse, IntelliJ IDEA, VS Code, Swagger / OpenAPI</div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <h2 class="section-title">Work Experience</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Java Full Stack Developer</span>
+          <span class="item-date">May 2025 &ndash; Present (Dec 2025)</span>
+        </div>
+        <div class="item-subheader">Stackly &bull; Chennai, India</div>
+        <ul class="bullets">
+          <li>Architected and implemented enterprise-grade RESTful microservices with Spring Boot, Spring Data JPA, and MySQL.</li>
+          <li>Optimized relational database interactions, designing stored procedures, composite B-Tree indexes, and transactional queries that reduced query response times significantly.</li>
+          <li>Enforced stateless role-based security filters using Spring Security and JSON Web Tokens (JWT).</li>
+          <li>Ensured strict ACID compliance and zero deadlock conditions across high-throughput data mutations.</li>
+          <li>Collaborated in agile development sprints, conducting peer code reviews and integrating end-to-end APIs.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Intern &ndash; Gen AI Connect Summit and Expo</span>
+          <span class="item-date">April 2024 &ndash; June 2024</span>
+        </div>
+        <div class="item-subheader">StartNet Ventures Private Limited &bull; Salem, India</div>
+        <ul class="bullets">
+          <li>Assisted in building AI-based business solutions leveraging Generative AI tools (HeyGen) and automated workflows.</li>
+          <li>Worked within cross-functional teams to deliver enterprise technical objectives and prototype demos.</li>
+          <li>Gained real-world exposure to software engineering lifecycles and client stakeholder communication.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+      <h2 class="section-title">Key Engineering Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Libraries Book Management System</span>
+          <span class="item-date">Spring Boot, Spring Data JPA, MySQL, REST APIs</span>
+        </div>
+        <ul class="bullets">
+          <li>Built a full-stack enterprise catalog tracking book inventory, lending life cycles, and automated fine calculations.</li>
+          <li>Applied optimistic locking (@Version) to prevent concurrency collisions when multiple patrons borrow the last copy.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Vehicle Rent Management System</span>
+          <span class="item-date">Spring Boot, Spring Security, JWT, Hibernate, MySQL</span>
+        </div>
+        <ul class="bullets">
+          <li>Engineered end-to-end leasing engine with distinct customer/admin roles and automated date-range overlap detection.</li>
+          <li>Constructed dynamic pricing algorithms computing daily, weekly, and late return penalties.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Mobile Recharge Application</span>
+          <span class="item-date">Spring Boot, Transaction Management, MySQL</span>
+        </div>
+        <ul class="bullets">
+          <li>Implemented atomic transaction processing with idempotency keys and mock payment gateway reconciliation.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Banking Management System</span>
+          <span class="item-date">Java, JDBC, MySQL, PreparedStatements</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected an ACID-compliant fund transfer engine using manual JDBC commit/rollback control and row-level locking.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Relational Database Architecture Projects</span>
+          <span class="item-date">MySQL 8.0, Stored Procedures, Triggers, 3NF</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>Banking Scenario:</strong> Designed 3NF schema with stored procedures (`sp_TransferFunds`) and automated audit triggers.</li>
+          <li><strong>Customer Order DB:</strong> Modeled complex multi-table joins, inventory reservation triggers, and sales aggregation views.</li>
+          <li><strong>Railway Reservation DB:</strong> Engineered train station route graphs, berth quota partitions (RAC/WL), and PNR resolvers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Training -->
+    <section class="section">
+      <h2 class="section-title">Education &amp; Professional Training</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span>Bachelor of Engineering (B.E.) &ndash; Computer Science and Engineering</span>
+          <span class="item-date">Nov 2021 &ndash; May 2025</span>
+        </div>
+        <div class="item-subheader">Salem College of Engineering and Technology &bull; Salem, India &bull; <strong>CGPA: 8.3 / 83%</strong></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Java Full Stack Development Training</span>
+          <span class="item-date">May 2025 &ndash; February 2026</span>
+        </div>
+        <div class="item-subheader">QSpiders &bull; Chennai, India</div>
+        <p style="font-size: 0.85rem; color: #475569;">Rigorous training in Core Java, Advanced Java (JSP, Servlets, JDBC), Spring Boot, MySQL, and Web Design.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Higher Secondary School Certificate (HSC) &ndash; 75%</span>
+          <span class="item-date">June 2019 &ndash; April 2021</span>
+        </div>
+        <div class="item-subheader">Sri Ramakrishna Boys Matric Hr. Sec School &bull; Perambalur, India</div>
+      </div>
+    </section>
+
+    <!-- Achievements & Languages -->
+    <section class="section">
+      <h2 class="section-title">Achievements &amp; Languages</h2>
+      <div style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
+        <p><strong>Top Brains Hackathon &ndash; 10th Place:</strong> Top Brains. Secured 10th position competing with an Advanced Java algorithmic problem-solving architecture under timed competition constraints.</p>
+        <p><strong>Gen AI Connect Summit and Expo:</strong> StartNet Ventures Private Limited, Salem. Attended sessions on cutting-edge AI advancements and networked with industry professionals.</p>
+        <p><strong>Expertise in Website Designing:</strong> Connect Infosystem, Chennai. Gained insight into modern web design trends, UI/UX aesthetics, and responsive performance practices.</p>
+        <p style="margin-top: 4px;"><strong>Languages:</strong> English (Professional Working Proficiency), Tamil (Native).</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

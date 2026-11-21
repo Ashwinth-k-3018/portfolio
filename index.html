@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashwinth K | Java Full Stack Developer & Database Specialist</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Ashwinth K - Java Full Stack Developer at Stackly. Specialized in Spring Boot, REST APIs, JDBC, MySQL Database Architecture, and High-Performance Web Applications.">
+  <meta name="keywords" content="Ashwinth K, Java Developer, Spring Boot, Full Stack Developer, Stackly, JDBC, MySQL, Freelance Java Developer, Chennai Developer">
+  <meta name="author" content="Ashwinth K">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts: Inter, Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=2.3">
+</head>
+<body>
+
+  <!-- Background Cyber Pattern -->
+  <div class="bg-grid-pattern"></div>
+
+  <!-- ===================================================================
+       1. NAVIGATION BAR
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo">
+        <img src="assets/images/logo.png" alt="Ashwinth K Logo" class="brand-logo-img">
+        <span>Ashwinth<span class="text-emerald">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About &amp; Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills Arsenal</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#freelance" class="nav-link">Freelance Services</a></li>
+          <li><a href="#terminal" class="nav-link">CLI Terminal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" onclick="openResumeModal()">
+          <i class="fa-solid fa-file-invoice"></i> Resume
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-bolt"></i> Hire Me
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle);">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="Ashwinth K Logo" class="brand-logo-img">
+        <span>Ashwinth</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link nav-link"><i class="fa-solid fa-user-tie"></i> About &amp; Experience</a></li>
+      <li><a href="#skills" class="mobile-nav-link nav-link"><i class="fa-solid fa-layer-group"></i> Technical Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link nav-link"><i class="fa-solid fa-code"></i> Projects (13+)</a></li>
+      <li><a href="#freelance" class="mobile-nav-link nav-link"><i class="fa-solid fa-briefcase"></i> Freelance Services</a></li>
+      <li><a href="#terminal" class="mobile-nav-link nav-link"><i class="fa-solid fa-terminal"></i> CLI Terminal</a></li>
+      <li><a href="#contact" class="mobile-nav-link nav-link"><i class="fa-solid fa-paper-plane"></i> Contact Me</a></li>
+    </ul>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: auto;">
+      <button class="btn btn-secondary" onclick="openResumeModal()">
+        <i class="fa-solid fa-file-lines"></i> View &amp; Print Resume
+      </button>
+      <a href="#contact" class="btn btn-primary">
+        <i class="fa-solid fa-bolt"></i> Get In Touch
+      </a>
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       2. HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <!-- Profile Photo & Status Badge -->
+          <div class="hero-profile-badge">
+            <div class="avatar-ring">
+              <div class="avatar-ring-inner">
+                <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K - Java Full Stack Developer" class="hero-avatar-img">
+              </div>
+              <span class="avatar-online-dot"></span>
+            </div>
+            <div class="hero-profile-text">
+              <span class="hero-profile-tag">Ashwinth K</span>
+              <span class="hero-profile-sub">Java Full Stack Dev @ Stackly</span>
+            </div>
+          </div>
+
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Java Full Stack Developer @ Stackly &bull; Open for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Ashwinth K</span>.<br>
+            Building High-Scale Java Backends &amp; Robust Databases.
+          </h1>
+
+          <p class="hero-subtitle">
+            Placed at <strong>Stackly</strong> as a Java Full Stack Developer. Specialized in engineering high-throughput <strong>Spring Boot REST microservices</strong>, bulletproof <strong>JDBC transaction engines</strong>, and optimized <strong>MySQL database architectures</strong>. Available for full-time career leaps and high-impact freelance projects.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> Explore 13+ Projects
+            </a>
+            <button class="btn btn-secondary" onclick="openResumeModal()">
+              <i class="fa-solid fa-download"></i> View / Download Resume
+            </button>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <div class="stat-number">14<span>+</span></div>
+              <div class="stat-label">Java &amp; DB Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">Stackly</div>
+              <div class="stat-label">Full Stack Java Dev</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">8.3<span>/10</span></div>
+              <div class="stat-label">B.E. CSE CGPA</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100<span>%</span></div>
+              <div class="stat-label">ACID &amp; Clean Code</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Code Window -->
+        <div class="hero-code-card">
+          <div class="code-header">
+            <div class="window-dots">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <div class="code-tabs">
+              <button class="code-tab-btn active" data-tab="profile">DeveloperProfile.java</button>
+              <button class="code-tab-btn" data-tab="controller">SpringController.java</button>
+              <button class="code-tab-btn" data-tab="sql">TransferFunds.sql</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code id="heroCodeContent"><span class="syntax-keyword">public class</span> <span class="syntax-class">AshwinthDevProfile</span> {
+    <span class="syntax-keyword">private String</span> name = <span class="syntax-string">"Ashwinth K"</span>;
+    <span class="syntax-keyword">private String</span> currentRole = <span class="syntax-string">"Java Full Stack Developer"</span>;
+    <span class="syntax-keyword">private String</span> company = <span class="syntax-string">"Stackly"</span>;
+    <span class="syntax-keyword">private String</span> email = <span class="syntax-string">"ashwinthkumar003@gmail.com"</span>;
+    <span class="syntax-keyword">private double</span> bTechCgpa = <span class="syntax-number">8.3</span>;
+
+    <span class="syntax-keyword">public boolean</span> isAvailableForOpportunities() {
+        <span class="syntax-comment">// Open for full-time career leaps &amp; freelance projects</span>
+        <span class="syntax-keyword">return true</span>;
+    }
+
+    <span class="syntax-keyword">public String[]</span> getPrimarySkills() {
+        <span class="syntax-keyword">return new String[]</span> {
+            <span class="syntax-string">"Java"</span>, <span class="syntax-string">"Spring Boot"</span>, <span class="syntax-string">"Spring Data JPA"</span>,
+            <span class="syntax-string">"JDBC"</span>, <span class="syntax-string">"MySQL"</span>, <span class="syntax-string">"REST APIs"</span>, <span class="syntax-string">"JavaScript"</span>
+        };
+    }
+}</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. ABOUT & CAREER JOURNEY (STACKLY & EXPERIENCE)
+       =================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-briefcase"></i> Experience &amp; Journey</span>
+        <h2 class="section-title">My Professional Career &amp; Education</h2>
+        <p class="section-subtitle">
+          From hands-on full stack training to enterprise placement at Stackly, here is how I have honed my backend engineering and database mastery.
+        </p>
+      </div>
+
+      <!-- Developer Portrait Spotlight Card -->
+      <div class="about-spotlight-card">
+        <div class="about-photo-wrapper">
+          <div class="photo-cyber-frame">
+            <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K - Java Full Stack Developer" class="about-portrait-img">
+          </div>
+          <div class="about-photo-badges">
+            <div class="floating-badge badge-stackly">
+              <i class="fa-solid fa-briefcase"></i> Stackly Dev
+            </div>
+            <div class="floating-badge badge-spring">
+              <i class="fa-solid fa-leaf"></i> Spring Boot &amp; MySQL
+            </div>
+          </div>
+        </div>
+        <div class="about-spotlight-bio">
+          <span class="section-pill" style="margin-bottom: 8px;"><i class="fa-solid fa-user-check"></i> Meet The Engineer</span>
+          <h3>"Building resilient, scalable backends with clean architecture."</h3>
+          <p>
+            Hello! I'm <strong>Ashwinth K</strong>, a Java Full Stack Developer based in Chennai, currently working at <strong>Stackly</strong>. I specialize in designing high-throughput Spring Boot REST microservices, low-latency JDBC database interfaces, and ACID-compliant MySQL schemas.
+          </p>
+          <p>
+            Whether you are a hiring team looking for an energetic, disciplined engineer who learns fast and ships production-ready code, or a business client looking to bring a reliable web MVP to life, I deliver robust software built to scale.
+          </p>
+          <div class="about-spotlight-actions">
+            <a href="#contact" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-paper-plane"></i> Let's Discuss Opportunities
+            </a>
+            <a href="https://wa.me/917339053147?text=Hi%20Ashwinth,%20I%20saw%20your%20Java%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="color: #86efac; border-color: rgba(34, 197, 94, 0.3);">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="color: #fca5a5; border-color: rgba(239, 68, 68, 0.3);">
+              <i class="fa-solid fa-envelope"></i> Open in Gmail
+            </a>
+            <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="color: #7dd3fc; border-color: rgba(14, 118, 168, 0.35);">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Experience 1: Stackly -->
+        <div class="timeline-item company-stackly">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card featured-placement">
+            <div class="exp-badge-row">
+              <span class="exp-status-tag active"><i class="fa-solid fa-bolt"></i> Current Company Placement</span>
+              <span class="exp-date">May 2025 &ndash; Present (Dec 2025)</span>
+            </div>
+            <h3 class="exp-role">Java Full Stack Developer</h3>
+            <div class="exp-company">
+              <i class="fa-solid fa-building"></i> Stackly &bull; <span class="exp-location">Chennai, India</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Engineered and deployed modular RESTful services using Spring Boot, Hibernate, and Spring Data JPA for enterprise client modules.</li>
+              <li>Architected and optimized relational database schemas in MySQL, designing stored procedures, composite B-tree indexes, and triggers that cut query latencies.</li>
+              <li>Implemented secure authentication and authorization flows utilizing Spring Security and stateless JWT token verification.</li>
+              <li>Handled high-concurrency database transactions ensuring strict ACID consistency and elimination of deadlock conditions.</li>
+              <li>Collaborated with cross-functional engineering teams in agile sprints, participating in code reviews, API contract designs, and end-to-end integration testing.</li>
+            </ul>
+            <div class="exp-tech-chips">
+              <span class="tech-chip">Java</span>
+              <span class="tech-chip">Spring Boot</span>
+              <span class="tech-chip">Spring Data JPA</span>
+              <span class="tech-chip">MySQL</span>
+              <span class="tech-chip">REST APIs</span>
+              <span class="tech-chip">JWT Security</span>
+              <span class="tech-chip">Agile / Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: StartNet Ventures -->
+        <div class="timeline-item internship">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="exp-badge-row">
+              <span class="exp-status-tag completed"><i class="fa-solid fa-check"></i> Enterprise Internship</span>
+              <span class="exp-date">April 2024 &ndash; June 2024</span>
+            </div>
+            <h3 class="exp-role">Intern &ndash; Gen AI Connect Summit and Expo</h3>
+            <div class="exp-company">
+              <i class="fa-solid fa-brain"></i> StartNet Ventures Private Limited &bull; <span class="exp-location">Salem, India</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Assisted in building AI-based business solutions utilizing modern Generative AI tooling including HeyGen and automated content pipelines.</li>
+              <li>Collaborated within a cross-functional team to deliver high-priority technical project objectives under tight milestone deadlines.</li>
+              <li>Gained deep hands-on exposure to enterprise software development workflows, team sprints, and presentation to industry stakeholders.</li>
+            </ul>
+            <div class="exp-tech-chips">
+              <span class="tech-chip">Generative AI</span>
+              <span class="tech-chip">HeyGen Workflows</span>
+              <span class="tech-chip">Cross-Functional Collaboration</span>
+              <span class="tech-chip">Enterprise Workflows</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: QSpiders Full Stack Training -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="exp-badge-row">
+              <span class="exp-status-tag completed"><i class="fa-solid fa-graduation-cap"></i> Professional Coursework</span>
+              <span class="exp-date">May 2025 &ndash; February 2026</span>
+            </div>
+            <h3 class="exp-role">Java Full Stack Development Specialization</h3>
+            <div class="exp-company">
+              <i class="fa-solid fa-laptop-code"></i> QSpiders &bull; <span class="exp-location">Chennai, India</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Completed comprehensive rigorous training in Core Java, Advanced Java (JSP, Servlets, JDBC), and Spring Boot backend engineering.</li>
+              <li>Mastered database engineering in MySQL: complex multi-table joins, subqueries, normalization, and ACID transaction controls.</li>
+              <li>Developed real-time enterprise-scale web applications implementing MVC patterns, DAO layers, and responsive frontend interfaces.</li>
+            </ul>
+            <div class="exp-tech-chips">
+              <span class="tech-chip">Core Java</span>
+              <span class="tech-chip">Advanced Java (JSP &amp; Servlets)</span>
+              <span class="tech-chip">JDBC</span>
+              <span class="tech-chip">MySQL</span>
+              <span class="tech-chip">HTML5 / CSS3 / JS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Achievements Grid -->
+      <div class="edu-achieve-grid">
+        
+        <!-- Education Card -->
+        <div class="glass-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3 class="skill-cat-title">Formal Education</h3>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <h4 style="font-size: 1.1rem; color: #ffffff;">B.E. Computer Science and Engineering</h4>
+                <span class="text-emerald font-mono" style="font-size: 0.9rem; font-weight: 700;">CGPA: 8.3 / 83%</span>
+              </div>
+              <p style="color: var(--accent-emerald-light); font-size: 0.9rem; margin-bottom: 2px;">Salem College of Engineering and Technology</p>
+              <span style="font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">Nov 2021 &ndash; May 2025 &bull; Salem, India</span>
+            </div>
+
+            <div style="padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                <h4 style="font-size: 1.05rem; color: #ffffff;">Higher Secondary School Certificate (HSC)</h4>
+                <span class="text-indigo font-mono" style="font-size: 0.9rem; font-weight: 700;">Score: 75%</span>
+              </div>
+              <p style="color: var(--accent-indigo-light); font-size: 0.9rem; margin-bottom: 2px;">Sri Ramakrishna Boys Matric Hr. Sec School</p>
+              <span style="font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">June 2019 &ndash; April 2021 &bull; Perambalur, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Recognitions Card -->
+        <div class="glass-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-trophy text-amber"></i>
+            <h3 class="skill-cat-title">Achievements &amp; Hackathons</h3>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 18px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; flex-wrap: wrap; gap: 6px;">
+                <h4 style="font-size: 1.05rem; color: #ffffff;">
+                  <i class="fa-solid fa-trophy text-amber" style="margin-right: 6px;"></i> Top Brains Hackathon
+                </h4>
+                <span class="text-amber font-mono" style="font-size: 0.78rem; font-weight: 700; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.35); padding: 2px 10px; border-radius: var(--radius-full);">🏆 10th Place Finalist</span>
+              </div>
+              <p style="color: var(--accent-amber); font-size: 0.82rem; font-family: var(--font-mono); margin-bottom: 4px;">Top Brains &bull; Advanced Java Problem Solving</p>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.55;">
+                Secured <strong>10th place</strong> in the prestigious hackathon by architecting an advanced-level Java problem-solving system featuring optimized algorithms, object-oriented design patterns, and high-efficiency computational logic under timed competition constraints.
+              </p>
+            </div>
+
+            <div style="padding-top: 14px; border-top: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: #ffffff; margin-bottom: 4px;">
+                <i class="fa-solid fa-certificate text-emerald" style="margin-right: 6px;"></i> Gen AI Connect Summit and Expo
+              </h4>
+              <p style="color: var(--accent-emerald-light); font-size: 0.82rem; font-family: var(--font-mono); margin-bottom: 4px;">StartNet Ventures Private Limited &bull; Salem</p>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Represented StartNet Ventures. Explored state-of-the-art AI advancements, connected with engineering leaders, and showcased generative workflows.
+              </p>
+            </div>
+
+            <div style="padding-top: 14px; border-top: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: #ffffff; margin-bottom: 4px;">
+                <i class="fa-solid fa-palette text-indigo" style="margin-right: 6px;"></i> Expertise in Website Designing
+              </h4>
+              <p style="color: var(--accent-indigo-light); font-size: 0.82rem; font-family: var(--font-mono); margin-bottom: 4px;">Connect Infosystem &bull; Chennai</p>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Recognized for demonstrating deep insight into modern responsive UI design trends, cross-device standards, and frontend performance practices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. FREELANCE SERVICES SECTION
+       =================================================================== -->
+  <section class="freelance-section" id="freelance">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill indigo"><i class="fa-solid fa-handshake"></i> Client Solutions</span>
+        <h2 class="section-title">Freelance Services for Businesses &amp; Startups</h2>
+        <p class="section-subtitle">
+          Looking for a dependable developer who writes clean code, communicates transparently, and delivers on schedule? Here is what I build for clients:
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box emerald">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h3 class="service-title">Spring Boot REST API &amp; Microservices</h3>
+          <p class="service-desc">
+            End-to-end backend services designed for throughput, reliability, and security. Full DTO validation, Swagger documentation, and clean architecture.
+          </p>
+          <ul class="service-deliverables">
+            <li><i class="fa-solid fa-check"></i> RESTful CRUD &amp; Business Logic Endpoints</li>
+            <li><i class="fa-solid fa-check"></i> JWT / Role-based Authentication</li>
+            <li><i class="fa-solid fa-check"></i> OpenAPI / Swagger Documentation</li>
+            <li><i class="fa-solid fa-check"></i> Third-party API &amp; Payment Webhooks</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box cyan">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3 class="service-title">Database Design &amp; Query Tuning (MySQL)</h3>
+          <p class="service-desc">
+            Transform slow, unorganized data into optimized 3NF relational schemas with B-Tree indexes, stored procedures, and guaranteed ACID consistency.
+          </p>
+          <ul class="service-deliverables">
+            <li><i class="fa-solid fa-check"></i> ER Diagram &amp; Normalized Relational Modeling</li>
+            <li><i class="fa-solid fa-check"></i> Stored Procedures, Functions &amp; Triggers</li>
+            <li><i class="fa-solid fa-check"></i> Slow Query Optimization &amp; Indexing</li>
+            <li><i class="fa-solid fa-check"></i> Concurrency &amp; Deadlock Prevention</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box indigo">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="service-title">Full Stack Web MVP Development</h3>
+          <p class="service-desc">
+            Complete turnkey web platforms from scratch. Modern, high-converting frontend connected seamlessly to a scalable Java backend.
+          </p>
+          <ul class="service-deliverables">
+            <li><i class="fa-solid fa-check"></i> 100% Responsive Mobile / Desktop Layout</li>
+            <li><i class="fa-solid fa-check"></i> Admin Portals &amp; User Dashboards</li>
+            <li><i class="fa-solid fa-check"></i> Dynamic Cart, Booking &amp; Inventory Flows</li>
+            <li><i class="fa-solid fa-check"></i> Production-ready Deployment Setup</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-box amber">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="service-title">Legacy Refactoring &amp; Bug Resolution</h3>
+          <p class="service-desc">
+            Modernize outdated Java applications, migrate raw JDBC/Servlets code to Spring Boot, and fix tricky multithreading or connection pool leaks.
+          </p>
+          <ul class="service-deliverables">
+            <li><i class="fa-solid fa-check"></i> HikariCP Connection Pool Fixes</li>
+            <li><i class="fa-solid fa-check"></i> Elimination of SQL Injection Vulnerabilities</li>
+            <li><i class="fa-solid fa-check"></i> Code Quality &amp; Architecture Refactoring</li>
+            <li><i class="fa-solid fa-check"></i> Fast Emergency Bug Turnaround</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Freelance Call to Action Banner -->
+      <div class="freelance-cta-banner">
+        <div class="banner-content">
+          <h3>Have an idea or need a backend specialist for your project?</h3>
+          <p>
+            Whether it's a fixed-price project or an ongoing contract, I offer fast 24-hour turnaround quotes, daily progress updates, and clean, documented source code.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="flex-shrink: 0;">
+          <i class="fa-solid fa-comments"></i> Discuss Your Project
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. TECHNICAL SKILLS ARSENAL
+       =================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-microchip"></i> Core Competencies</span>
+        <h2 class="section-title">Technical Skills Matrix</h2>
+        <p class="section-subtitle">
+          A breakdown of my technical proficiency across backend architectures, database engineering, frontend technologies, and software tooling.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Category 1: Backend & Java -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-brands fa-java text-emerald"></i>
+            <h3 class="skill-cat-title">Backend &amp; Java Mastery</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Core Java (OOPs, Collections, Multithreading)</span>
+                <span class="skill-level-text">95%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Spring Boot &amp; REST Microservices</span>
+                <span class="skill-level-text">90%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>JDBC &amp; Transaction Management</span>
+                <span class="skill-level-text">92%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Spring Data JPA / Hibernate ORM</span>
+                <span class="skill-level-text">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Servlets &amp; JSP (MVC Architecture)</span>
+                <span class="skill-level-text">85%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-badge-cloud">
+            <span class="skill-pill"><i class="fa-solid fa-shield"></i> Exception Handling</span>
+            <span class="skill-pill"><i class="fa-solid fa-lock"></i> Spring Security</span>
+            <span class="skill-pill"><i class="fa-solid fa-key"></i> JWT</span>
+            <span class="skill-pill"><i class="fa-solid fa-code-branch"></i> Design Patterns</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Database Engineering & MySQL -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-database text-indigo"></i>
+            <h3 class="skill-cat-title">Database Engineering &amp; MySQL</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Relational Schema Design &amp; 3NF Normalization</span>
+                <span class="skill-level-text">92%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill indigo" style="width: 92%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Complex Joins, Subqueries &amp; Views</span>
+                <span class="skill-level-text">95%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill indigo" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Stored Procedures &amp; Stored Functions</span>
+                <span class="skill-level-text">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill indigo" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Automated Triggers &amp; Audit Logging</span>
+                <span class="skill-level-text">86%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill indigo" style="width: 86%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Indexing (B-Tree) &amp; Query Optimization</span>
+                <span class="skill-level-text">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill indigo" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-badge-cloud">
+            <span class="skill-pill"><i class="fa-solid fa-check-double"></i> ACID Guarantee</span>
+            <span class="skill-pill"><i class="fa-solid fa-link"></i> Referential Integrity</span>
+            <span class="skill-pill"><i class="fa-solid fa-bolt"></i> HikariCP Pool</span>
+            <span class="skill-pill"><i class="fa-solid fa-table"></i> MySQL 8.0</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Web & Frontend -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-laptop-code text-cyan"></i>
+            <h3 class="skill-cat-title">Frontend &amp; Web Technologies</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>HTML5 Semantic Web Standards</span>
+                <span class="skill-level-text">95%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 95%; background: linear-gradient(90deg, #06b6d4, #3b82f6);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>CSS3 (Flexbox, Grid, Animations, Variables)</span>
+                <span class="skill-level-text">90%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 90%; background: linear-gradient(90deg, #06b6d4, #3b82f6);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>JavaScript (ES6+, DOM, Async/Await, Fetch)</span>
+                <span class="skill-level-text">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 88%; background: linear-gradient(90deg, #06b6d4, #3b82f6);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Responsive Design (Mobile, Tablet, Desktop)</span>
+                <span class="skill-level-text">95%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 95%; background: linear-gradient(90deg, #06b6d4, #3b82f6);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-badge-cloud">
+            <span class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Mobile First</span>
+            <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> REST Client</span>
+            <span class="skill-pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+            <span class="skill-pill"><i class="fa-solid fa-eye"></i> Glassmorphism</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Tools & Engineering Practices -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-toolbox text-amber"></i>
+            <h3 class="skill-cat-title">Tools &amp; Workflow</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Git &amp; GitHub Version Control</span>
+                <span class="skill-level-text">90%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 90%; background: linear-gradient(90deg, #f59e0b, #ef4444);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Postman &amp; API Contract Testing</span>
+                <span class="skill-level-text">92%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 92%; background: linear-gradient(90deg, #f59e0b, #ef4444);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>Maven Project Lifecycle Management</span>
+                <span class="skill-level-text">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 88%; background: linear-gradient(90deg, #f59e0b, #ef4444);"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label-row">
+                <span>IDEs: Eclipse, VS Code, IntelliJ IDEA</span>
+                <span class="skill-level-text">95%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 95%; background: linear-gradient(90deg, #f59e0b, #ef4444);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-badge-cloud">
+            <span class="skill-pill"><i class="fa-solid fa-arrows-split-up-and-left"></i> MVC Pattern</span>
+            <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Agile / Scrum</span>
+            <span class="skill-pill"><i class="fa-solid fa-file-code"></i> Swagger / OpenAPI</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. PROJECTS SHOWCASE SECTION
+       =================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-code"></i> Portfolio Showcase</span>
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <p class="section-subtitle">
+          Explore 13+ production-grade systems spanning Spring Boot microservices, JDBC concurrency engines, Core Java algorithms, and normalized MySQL schemas.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (13)</button>
+        <button class="filter-btn" data-filter="springboot"><i class="fa-solid fa-leaf text-emerald"></i> Spring Boot (3)</button>
+        <button class="filter-btn" data-filter="jdbc"><i class="fa-solid fa-bolt text-indigo"></i> JDBC &amp; Servlets (3)</button>
+        <button class="filter-btn" data-filter="corejava"><i class="fa-brands fa-java text-amber"></i> Core Java (2)</button>
+        <button class="filter-btn" data-filter="mysql"><i class="fa-solid fa-database text-cyan"></i> MySQL Architecture (4)</button>
+        <button class="filter-btn" data-filter="frontend"><i class="fa-brands fa-html5 text-rose"></i> Frontend (1)</button>
+      </div>
+
+      <!-- Dynamic Projects Grid (Hydrated by js/main.js & projects-data.js) -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7. INTERACTIVE DEVELOPER TERMINAL
+       =================================================================== -->
+  <section id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill indigo"><i class="fa-solid fa-terminal"></i> Interactive Sandbox</span>
+        <h2 class="section-title">Developer Terminal</h2>
+        <p class="section-subtitle">
+          Test drive my profile directly through the terminal prompt or click any quick command pill below.
+        </p>
+      </div>
+
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fa-solid fa-terminal"></i> ashwinth@stackly-cloud:~
+          </div>
+          <span style="font-size: 0.75rem; color: var(--accent-emerald-light); font-family: var(--font-mono);">bash &bull; active</span>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-line">
+            Welcome to <span class="text-emerald">Ashwinth K's</span> interactive shell! Placed at Stackly as Java Full Stack Developer.
+          </div>
+          <div class="terminal-line">
+            Type <span class="text-emerald">'help'</span> to see available commands, or click any command below.
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">ashwinth@stackly-dev:~$</span> <span class="text-indigo">ashwinth.getSummary()</span>
+          </div>
+          <div class="terminal-line" style="color: #cbd5e1;">
+            &gt;&gt; "Passionate Java Full Stack Developer experienced with Spring Boot REST microservices, JDBC transaction handling, and high-concurrency MySQL schemas. Open for full-time leaps &amp; freelance opportunities."
+          </div>
+        </div>
+
+        <div class="terminal-quick-cmds">
+          <span class="terminal-quick-label">Quick Commands:</span>
+          <button class="terminal-cmd-pill" data-cmd="about">about</button>
+          <button class="terminal-cmd-pill" data-cmd="stackly">stackly</button>
+          <button class="terminal-cmd-pill" data-cmd="skills">skills</button>
+          <button class="terminal-cmd-pill" data-cmd="projects">projects</button>
+          <button class="terminal-cmd-pill" data-cmd="achieve">achieve</button>
+          <button class="terminal-cmd-pill" data-cmd="github">github</button>
+          <button class="terminal-cmd-pill" data-cmd="freelance">freelance</button>
+          <button class="terminal-cmd-pill" data-cmd="contact">contact</button>
+          <button class="terminal-cmd-pill" data-cmd="clear">clear</button>
+        </div>
+
+        <div style="padding: 12px 20px; background: #070a10; border-top: 1px solid rgba(255,255,255,0.06);">
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">ashwinth@stackly-dev:~$</span>
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Type a command (e.g. 'skills', 'hire', 'projects') and press Enter..." autocomplete="off">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       8. CONTACT SECTION (Direct to ashwinthkumar003@gmail.com)
+       =================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-paper-plane"></i> Let's Collaborate</span>
+        <h2 class="section-title">Get In Touch Directly</h2>
+        <p class="section-subtitle">
+          Have an exciting job opportunity, a freelance project, or an engineering question? Send a message below &mdash; it will arrive immediately in my email inbox!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left Contact Info Card -->
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">Contact Information</h3>
+          <p class="contact-info-desc">
+            I respond quickly within 24 hours. Feel free to send an email, call, or reach out over WhatsApp to discuss full-time roles, freelance MVPs, or contract work.
+          </p>
+
+          <div class="contact-details-list">
+            
+            <!-- Email -->
+            <div class="contact-detail-item contact-email-item">
+              <div class="contact-icon-bubble">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-detail-content">
+                <div class="contact-detail-label">Direct Email</div>
+                <div class="contact-detail-value">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-email-link">ashwinthkumar003@gmail.com</a>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-sm copy-email-btn" title="Copy Email to Clipboard" aria-label="Copy Email">
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-bubble">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-detail-content">
+                <div class="contact-detail-label">Phone &amp; WhatsApp</div>
+                <div class="contact-detail-value">
+                  <a href="tel:+917339053147" style="color: #ffffff;">+91 7339053147</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-bubble">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-detail-content">
+                <div class="contact-detail-label">Current Location</div>
+                <div class="contact-detail-value">Chennai, Tamil Nadu, India</div>
+              </div>
+            </div>
+
+            <!-- Current Company -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-bubble">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="contact-detail-content">
+                <div class="contact-detail-label">Current Placement</div>
+                <div class="contact-detail-value">Stackly (Java Full Stack Developer)</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="contact-quick-actions">
+            <a href="https://wa.me/917339053147?text=Hi%20Ashwinth,%20I%20saw%20your%20Java%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm action-btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm action-btn-gmail">
+              <i class="fa-solid fa-envelope"></i> Open in Gmail
+            </a>
+            <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm action-btn-linkedin">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Working Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.45rem; color: #ffffff; margin-bottom: 8px;">Send Me a Message</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+            Filled submissions deliver directly to <strong class="text-emerald">ashwinthkumar003@gmail.com</strong>.
+          </p>
+
+          <form id="contactForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. John Doe / Tech Recruiter" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. name@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contactInquiryType" class="form-label">Inquiry Type</label>
+                <select id="contactInquiryType" name="inquiry_type" class="form-control" style="cursor: pointer;">
+                  <option value="Freelance Project">Freelance Backend / Web Project</option>
+                  <option value="Full-Time Hiring">Full-Time Career Opportunity / Hiring</option>
+                  <option value="Contract Consulting">Technical Consultation / Database Tuning</option>
+                  <option value="Other">General Inquiry / Networking</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="e.g. Java Full Stack Opportunity">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" name="message" class="form-control" placeholder="Describe your project, team requirements, or role details..." required></textarea>
+            </div>
+
+            <div id="formStatus" style="margin-bottom: 16px;"></div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                <i class="fa-solid fa-spinner fa-spin" id="btnSpinner" style="display: none;"></i>
+                <i class="fa-solid fa-paper-plane" id="btnIcon"></i>
+                <span id="btnText">Send Message to Ashwinth</span>
+              </button>
+              <span class="form-note">
+                <i class="fa-solid fa-shield-halved text-emerald"></i> Privacy protected. Direct email delivery.
+              </span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       9. FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="#hero" class="brand-logo" style="margin-bottom: 8px;">
+            <img src="assets/images/logo.png" alt="Ashwinth K Logo" class="brand-logo-img">
+            <span>Ashwinth K</span>
+          </a>
+          <p class="footer-text">
+            Java Full Stack Developer at Stackly &bull; Crafting scalable systems, REST APIs &amp; databases.
+          </p>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/Ashwinth-k-3018" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/Ashwinth-k-3018/Java_Stackly" target="_blank" rel="noopener noreferrer" class="social-link" title="Java & MySQL Repository">
+            <i class="fa-solid fa-code-fork"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Open in Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+917339053147" class="social-link" title="Call Ashwinth">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        &copy; 2026 Ashwinth K
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       10. PROJECT DEEP DIVE MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-dialog" id="projectModalContent">
+      <!-- Injected by openProjectModal() in main.js -->
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       11. RESUME MODAL & PRINT VIEW
+       =================================================================== -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-dialog" style="max-width: 900px;">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="project-cat-badge cat-springboot" style="margin-bottom: 6px; display: inline-block;">UPDATED RESUME &bull; STACKLY PLACEMENT</span>
+          <h3>Ashwinth K &ndash; Resume Preview</h3>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <a href="resume.html" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Printable View
+          </a>
+          <button class="modal-close-btn" onclick="closeResumeModal()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body" style="background: #090d16; padding: 24px;">
+        <div style="background: #ffffff; color: #1e293b; padding: 36px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); font-family: 'Inter', sans-serif;">
+          
+          <!-- Resume Header -->
+          <div style="border-bottom: 2px solid #0f172a; padding-bottom: 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 20px; text-align: left;">
+            <div style="width: 74px; height: 74px; border-radius: 50%; overflow: hidden; border: 2.5px solid #0284c7; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center;">
+              <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; transform: scale(1.05); display: block;">
+            </div>
+            <div>
+              <h1 style="font-size: 1.8rem; color: #0f172a; letter-spacing: -0.02em; margin-bottom: 4px;">ASHWINTH K</h1>
+              <p style="font-size: 0.88rem; color: #475569; font-weight: 500;">
+                <strong>Java Full Stack Developer</strong> &bull; Chennai, India<br>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank" style="color: #0284c7;">ashwinthkumar003@gmail.com</a> &bull; +91 7339053147<br>
+                <a href="https://github.com/Ashwinth-k-3018" target="_blank" style="color: #0284c7;">github.com/Ashwinth-k-3018</a> &bull; 
+                <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" style="color: #0284c7;">linkedin.com/in/ashwinth-k-91616529b</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Professional Objective -->
+          <div style="margin-bottom: 18px;">
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Professional Summary
+            </h3>
+            <p style="font-size: 0.88rem; color: #334155; line-height: 1.55;">
+              Java Full Stack Developer placed at <strong>Stackly</strong>, with solid experience developing enterprise RESTful microservices, transactional JDBC backends, and normalized MySQL schemas. Strong foundation in Core Java (OOPs, Collections, Multithreading, Exception Handling), Spring Boot, Spring Data JPA, and modern web technologies. Eager to contribute to scalable engineering environments and freelance initiatives.
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div style="margin-bottom: 18px;">
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Technical Skills
+            </h3>
+            <div style="font-size: 0.86rem; color: #334155; line-height: 1.6;">
+              <strong>Programming &amp; Core:</strong> Java (8/11/17/21), OOPs, Collections Framework, Multithreading, Exception Handling, File I/O.<br>
+              <strong>Java Technologies &amp; Frameworks:</strong> Spring Boot, Spring Data JPA, Hibernate, JDBC, JSP, Servlets, RESTful APIs, Spring Security &amp; JWT.<br>
+              <strong>Databases:</strong> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID).<br>
+              <strong>Web &amp; Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive Web Design, Bootstrap.<br>
+              <strong>Tools &amp; Practices:</strong> Git, GitHub, Maven, Postman, Eclipse, VS Code, Agile/Scrum, MVC Architecture.
+            </div>
+          </div>
+
+          <!-- Work Experience -->
+          <div style="margin-bottom: 18px;">
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Work Experience
+            </h3>
+            
+            <div style="margin-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; font-weight: bold; color: #0f172a; font-size: 0.92rem;">
+                <span>Java Full Stack Developer &ndash; Stackly</span>
+                <span>May 2025 &ndash; Present (Dec 2025) &bull; Chennai</span>
+              </div>
+              <ul style="margin: 6px 0 0 20px; font-size: 0.86rem; color: #334155; line-height: 1.5;">
+                <li>Designed and developed RESTful microservices utilizing Spring Boot and Spring Data JPA.</li>
+                <li>Optimized MySQL relational database queries, authoring stored procedures, triggers, and B-Tree indexes.</li>
+                <li>Implemented secure endpoints with Spring Security and JWT authentication tokens.</li>
+                <li>Engineered high-concurrency database transactions ensuring ACID guarantees.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-weight: bold; color: #0f172a; font-size: 0.92rem;">
+                <span>Intern &ndash; Gen AI Connect Summit &amp; Expo &ndash; StartNet Ventures Pvt Ltd</span>
+                <span>April 2024 &ndash; June 2024 &bull; Salem</span>
+              </div>
+              <ul style="margin: 6px 0 0 20px; font-size: 0.86rem; color: #334155; line-height: 1.5;">
+                <li>Assisted in developing AI-based solutions leveraging Generative AI tools (HeyGen).</li>
+                <li>Collaborated in cross-functional agile teams to deliver technical project deliverables.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects Showcase -->
+          <div style="margin-bottom: 18px;">
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Key Projects
+            </h3>
+            <div style="font-size: 0.86rem; color: #334155; line-height: 1.5;">
+              <p><strong>Libraries Book Management System:</strong> Spring Boot, Spring Data JPA, MySQL. Built book borrowing, automated overdue fine calculation, and RESTful APIs.</p>
+              <p><strong>Vehicle Rent Management System:</strong> Spring Boot, Spring Security, JWT, MySQL. Role-based customer/admin vehicle leasing and billing engine.</p>
+              <p><strong>Mobile Recharge Application:</strong> Spring Boot, Transaction Management, MySQL. Atomic transaction processing, plan filtering, and simulated payment gateway.</p>
+              <p><strong>Banking Management System:</strong> Java, JDBC, MySQL. ACID-compliant fund transfer engine with PIN hashing and raw SQL row-level locking.</p>
+              <p><strong>Database Architecture Projects:</strong> Designed production schemas in MySQL for Banking Scenarios (Stored Procedures, Triggers), Customer Orders (3NF, Joins), Hotel Management, and Railway Reservation Systems.</p>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div style="margin-bottom: 18px;">
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Education &amp; Training
+            </h3>
+            <div style="font-size: 0.86rem; color: #334155; line-height: 1.55;">
+              <p><strong>B.E. Computer Science and Engineering:</strong> Salem College of Engineering and Technology (2021 &ndash; 2025) &bull; <strong>CGPA: 8.3 / 83%</strong></p>
+              <p><strong>Java Full Stack Specialization:</strong> QSpiders, Chennai (May 2025 &ndash; Feb 2026) &bull; Core Java, Advanced Java, Spring Boot, JDBC, MySQL.</p>
+              <p><strong>Higher Secondary School (HSC):</strong> Sri Ramakrishna Boys Matric Hr. Sec School &bull; <strong>Score: 75%</strong></p>
+            </div>
+          </div>
+
+          <!-- Achievements & Honors -->
+          <div>
+            <h3 style="font-size: 1.05rem; color: #0f172a; text-transform: uppercase; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+              Achievements &amp; Hackathons
+            </h3>
+            <div style="font-size: 0.86rem; color: #334155; line-height: 1.55;">
+              <p><strong>Top Brains Hackathon &ndash; 10th Place:</strong> Top Brains. Secured 10th place competing with an Advanced Java algorithmic problem-solving architecture.</p>
+              <p><strong>Gen AI Connect Summit and Expo:</strong> StartNet Ventures Private Limited, Salem. Explored AI advancements and enterprise workflows.</p>
+              <p><strong>Expertise in Website Designing:</strong> Connect Infosystem, Chennai. Insight into modern responsive web design standards and practices.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
