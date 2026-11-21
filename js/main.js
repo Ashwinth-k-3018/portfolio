@@ -347,33 +347,33 @@ function initTerminal() {
   • <span class="text-emerald">contact</span>     - Direct contact info & email
   • <span class="text-emerald">clear</span>       - Clear the terminal screen`,
 
-    about: () => `Ashwinth K | Java Full Stack Developer & Database Specialist
-Location: Chennai, India | Placement: Stackly (May 2025 - Present)
+    about: () => `Ashwinth K | Java Full Stack Developer
+Location: Chennai, India | Current Role: Stackly (May 2025 - Present)
 Education: B.E. Computer Science, Salem College of Engg & Tech (CGPA: 8.3 / 83%)
 Achievements: 10th Place in Top Brains Hackathon (Advanced Java Problem Solving)
 GitHub: <a href="https://github.com/Ashwinth-k-3018" target="_blank" class="text-emerald">github.com/Ashwinth-k-3018</a>
-Passion: Building high-scale Spring Boot REST APIs, transactional JDBC systems, and clean MySQL architectures.`,
+Focus: Building clean Spring Boot REST APIs, relational MySQL databases, and responsive web applications.`,
 
     achieve: () => `Key Achievements & Hackathons:
   🏆 <span class="text-emerald">Top Brains Hackathon &ndash; 10th Place Finalist</span>:
-     Secured 10th position in the competition by architecting an Advanced Java algorithmic problem-solving system under strict timed constraints.
+     Secured 10th place by solving complex algorithmic challenges in Java under strict time limits.
   🌟 <span class="text-indigo">Gen AI Connect Summit & Expo</span>:
-     Represented StartNet Ventures Private Limited; explored generative AI workflows and networked with enterprise professionals.
+     Represented StartNet Ventures; explored AI tools (HeyGen) and networked with engineering professionals.
   🎨 <span class="text-cyan">Expertise in Website Designing</span>:
-     Recognized by Connect Infosystem (Chennai) for responsive UI design standards and frontend performance practices.`,
+     Certified by Connect Infosystem for responsive web layout design and clean CSS structuring.`,
 
     github: () => `GitHub Repositories:
   • GitHub Profile : <a href="https://github.com/Ashwinth-k-3018" target="_blank" class="text-emerald">https://github.com/Ashwinth-k-3018</a>
   • Java & MySQL Repo: <a href="https://github.com/Ashwinth-k-3018/Java_Stackly" target="_blank" class="text-indigo">https://github.com/Ashwinth-k-3018/Java_Stackly</a>`,
 
     stackly: () => `[CURRENT ROLE] Java Full Stack Developer @ Stackly
-Duration: May 2025 – Dec 2025 / Present
+Duration: May 2025 – Present (Dec 2025)
 Location: Chennai, India
 Key Ownership:
-  • Developed enterprise RESTful microservices using Spring Boot and Spring Data JPA.
-  • Authored high-concurrency database queries, stored procedures, and triggers in MySQL.
-  • Implemented secure JWT token authentication and role-based endpoints.
-  • Collaborated with engineering teams to enhance backend throughput and reliability.`,
+  • Develop and maintain RESTful APIs using Spring Boot, Spring Data JPA, and MySQL.
+  • Design database schemas, write stored procedures, and add B-Tree indexes to speed up queries.
+  • Implement secure JWT token authentication and role-based permissions.
+  • Collaborate in agile sprints with frontend engineers and QA teammates.`,
 
     skills: () => `Technical Arsenal:
   [Backend]  : Java (8/11/17/21), Spring Boot, Spring Data JPA, Hibernate, JDBC, Servlets, JSP
@@ -398,11 +398,11 @@ Key Ownership:
   13. Modern Responsive E-Commerce Platform [HTML5, CSS3, JavaScript]`,
 
     freelance: () => `Freelance Services Offered:
-  • Custom Spring Boot REST API & Microservice Development
-  • Database Architecture & MySQL Query Optimization (Speed up slow queries)
-  • Full Stack MVP Web Application Development
-  • Legacy Java Refactoring & Concurrency Bug Fixing
-  Ready to hire? Type 'contact' or email ashwinthkumar003@gmail.com!`,
+  • Spring Boot REST API Development (Validation, JWT auth, Swagger docs)
+  • Database Design & MySQL Query Optimization (Schema normalization & index tuning)
+  • Full Stack Web MVP Development (Responsive frontend + Spring Boot backend)
+  • Java Bug Fixing & Code Refactoring (Connection pool leaks & concurrency issues)
+  Ready to talk? Type 'contact' or email ashwinthkumar003@gmail.com!`,
 
     linkedin: () => `LinkedIn Profile:
   <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" class="text-emerald">https://www.linkedin.com/in/ashwinth-k-91616529b</a>`,
@@ -412,9 +412,9 @@ Key Ownership:
   • LinkedIn: <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" class="text-cyan">linkedin.com/in/ashwinth-k-91616529b</a>
   • Phone   : <a href="tel:+917339053147" class="text-indigo">+91 7339053147</a>
   • Location: Chennai, Tamil Nadu, India
-  • Response: Within 24 hours guaranteed`,
+  • Response: Within 24 hours`,
 
-    hire: () => `Great decision! You can reach Ashwinth directly at ashwinthkumar003@gmail.com, via LinkedIn (linkedin.com/in/ashwinth-k-91616529b), or via WhatsApp at +91 7339053147 to discuss full-time roles or freelance contracts.`,
+    hire: () => `I'd love to connect! You can reach me directly at ashwinthkumar003@gmail.com, via LinkedIn (linkedin.com/in/ashwinth-k-91616529b), or on WhatsApp at +91 7339053147 to discuss full-time roles or freelance projects.`,
 
     clear: () => '__CLEAR__'
   };

@@ -1,15 +1,15 @@
-# Ashwinth K - Java Full Stack Developer & Database Specialist Portfolio
+# Ashwinth K - Java Full Stack Developer Portfolio
 
-A modern, high-performance portfolio website built for **Ashwinth K**, currently placed at **Stackly** as a **Java Full Stack Developer**.
+A clean, modern portfolio website built for **Ashwinth K**, currently working at **Stackly** as a **Java Full Stack Developer**.
 
-Designed specifically to attract HR managers, engineering directors, and high-paying freelance clients.
+Built to showcase backend engineering skills, practical projects, and database design for engineering teams, recruiters, and freelance clients.
 
 ---
 
 ## 🌟 Key Highlights & Features
 
-- **Updated Stackly Experience:** Highlights Ashwinth's placement at **Stackly** (May 2025 &ndash; Present) focusing on Spring Boot microservices, REST APIs, and MySQL optimization.
-- **13+ Production-Grade Projects:**
+- **Stackly Experience:** Details Ashwinth's role at **Stackly** (May 2025 &ndash; Present) focusing on Spring Boot microservices, REST APIs, and MySQL optimization.
+- **13+ Practical Projects:**
   - **Spring Boot Backend:** *Libraries Book Management System*, *Vehicle Rent Management System*, *Mobile Recharge Application*.
   - **JDBC & Advanced Java:** *Banking Management System (ACID transactions)*, *Online Food Ordering System*, *Library Management System (MVC)*.
   - **Core Java:** *Hospital Appointment System (Multithreading/Collections)*, *Student Management System (File I/O Serialization)*.
@@ -20,9 +20,9 @@ Designed specifically to attract HR managers, engineering directors, and high-pa
   - Sends submissions straight to **`ashwinthkumar003@gmail.com`** using FormSubmit AJAX API.
   - Features real-time validation, loading spinner, success toast, and direct `mailto:` / WhatsApp fallback.
 - **Interactive Developer Terminal:** Visitors can run interactive commands (`about`, `stackly`, `skills`, `projects`, `freelance`, `contact`, `hire`, `clear`).
-- **Freelance Client Magnet Section:** Tailored offerings for startups and clients (REST API development, MySQL query tuning, full-stack MVPs, legacy modernization).
-- **Printable ATS Resume (`resume.html`):** One-click printable PDF view formatted for A4 standard.
-- **100% Cross-Device Responsive:** Meticulously styled for mobile devices, tablets, laptops, and ultra-wide screens.
+- **Freelance Services Section:** Practical service offerings for startups and clients (REST API development, MySQL query tuning, full-stack MVPs, bug fixing).
+- **Printable ATS Resume (`resume.html`):** One-click printable PDF view formatted for A4 standard (calibrated for 2 pages).
+- **100% Cross-Device Responsive:** Styled for mobile devices, tablets, laptops, and desktop screens.
 
 ---
 
