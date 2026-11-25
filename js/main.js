@@ -348,7 +348,7 @@ function initTerminal() {
   • <span class="text-emerald">clear</span>       - Clear the terminal screen`,
 
     about: () => `Ashwinth K | Java Full Stack Developer
-Location: Chennai, India | Current Role: Stackly (May 2025 - Present)
+Location: Chennai, India | Current Role: Stackly (May 2026 - Present)
 Education: B.E. Computer Science, Salem College of Engg & Tech (CGPA: 8.3 / 83%)
 Achievements: 10th Place in Top Brains Hackathon (Advanced Java Problem Solving)
 GitHub: <a href="https://github.com/Ashwinth-k-3018" target="_blank" class="text-emerald">github.com/Ashwinth-k-3018</a>
@@ -367,7 +367,7 @@ Focus: Building clean Spring Boot REST APIs, relational MySQL databases, and res
   • Java & MySQL Repo: <a href="https://github.com/Ashwinth-k-3018/Java_Stackly" target="_blank" class="text-indigo">https://github.com/Ashwinth-k-3018/Java_Stackly</a>`,
 
     stackly: () => `[CURRENT ROLE] Java Full Stack Developer @ Stackly
-Duration: May 2025 – Present (Dec 2025)
+Duration: May 2026 – Present
 Location: Chennai, India
 Key Ownership:
   • Develop and maintain RESTful APIs using Spring Boot, Spring Data JPA, and MySQL.

@@ -8,7 +8,7 @@ Built to showcase backend engineering skills, practical projects, and database d
 
 ## 🌟 Key Highlights & Features
 
-- **Stackly Experience:** Details Ashwinth's role at **Stackly** (May 2025 &ndash; Present) focusing on Spring Boot microservices, REST APIs, and MySQL optimization.
+- **Stackly Experience:** Details Ashwinth's role at **Stackly** (May 2026 &ndash; Present) focusing on Spring Boot microservices, REST APIs, and MySQL optimization.
 - **13+ Practical Projects:**
   - **Spring Boot Backend:** *Libraries Book Management System*, *Vehicle Rent Management System*, *Mobile Recharge Application*.
   - **JDBC & Advanced Java:** *Banking Management System (ACID transactions)*, *Online Food Ordering System*, *Library Management System (MVC)*.

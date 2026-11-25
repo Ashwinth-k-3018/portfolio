@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashwinth K - Resume | Java Full Stack Developer</title>
   
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <style>
-    :root {
-      --primary: #0f172a;
-      --secondary: #334155;
-      --accent: #0284c7;
-      --border: #cbd5e1;
-      --bg: #f8fafc;
+    @page {
+      size: A4 portrait;
+      margin: 14mm 16mm 14mm 16mm;
     }
 
     * {
@@ -27,23 +24,28 @@
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--primary);
-      font-family: 'Inter', -apple-system, sans-serif;
-      line-height: 1.48;
-      padding: 24px 16px;
+      font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: #000000;
+      background: #f8fafc;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      padding: 20px 16px 40px 16px;
     }
 
+    /* Screen Toolbar */
     .toolbar {
       max-width: 850px;
-      margin: 0 auto 18px auto;
+      margin: 0 auto 16px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #ffffff;
       padding: 12px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
       gap: 12px;
     }
 
@@ -66,15 +68,16 @@
       transition: all 0.2s ease;
       border: 1px solid transparent;
       white-space: nowrap;
+      font-family: inherit;
     }
 
     .btn-primary {
-      background: #0284c7;
+      background: #0f172a;
       color: #ffffff;
     }
 
     .btn-primary:hover {
-      background: #0369a1;
+      background: #1e293b;
     }
 
     .btn-secondary {
@@ -87,147 +90,265 @@
       background: #e2e8f0;
     }
 
-    .resume-sheet {
+    /* Resume Document Wrapper */
+    .resume-paper {
       max-width: 850px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 40px 48px;
+      padding: 42px 48px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
       border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
     }
 
-    header {
-      border-bottom: 2px solid var(--primary);
+    /* Header */
+    .header {
+      border-bottom: 1.8px solid #000000;
       padding-bottom: 14px;
-      margin-bottom: 18px;
-      display: flex;
-      align-items: center;
-      gap: 22px;
+      margin-bottom: 20px;
     }
 
-    .resume-avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2.5px solid #0284c7;
-      flex-shrink: 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    }
-
-    .resume-avatar img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      transform: scale(1.05);
-      display: block;
-    }
-
-    .resume-header-info {
-      flex: 1;
-      min-width: 0;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--primary);
-      margin-bottom: 4px;
-      line-height: 1.15;
-    }
-
-    .contact-info {
-      font-size: 0.88rem;
-      color: var(--secondary);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      line-height: 1.4;
-    }
-
-    .contact-info a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      margin-bottom: 16px;
-    }
-
-    .section-title {
-      font-size: 0.98rem;
+    .name {
+      font-size: 24pt;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--primary);
-      border-bottom: 1.5px solid var(--border);
-      padding-bottom: 3px;
+      letter-spacing: 0.7px;
+      color: #000000;
+      line-height: 1.15;
       margin-bottom: 8px;
     }
 
-    .item {
-      margin-bottom: 11px;
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 11px;
+      font-size: 9.6pt;
+      color: #111111;
     }
 
-    .item-header {
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #000000;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .contact-item:hover {
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: #444444;
+      font-weight: 600;
+    }
+
+    .icon {
+      width: 12px;
+      height: 12px;
+      fill: #000000;
+      flex-shrink: 0;
+    }
+
+    /* Section Headings */
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: #000000;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    /* Summary */
+    .summary-text {
+      text-align: justify;
+      color: #111111;
+      line-height: 1.55;
+    }
+
+    /* Skills */
+    .skills-list {
+      list-style: none;
+    }
+
+    .skills-list li {
+      margin-bottom: 7.5px;
+      color: #111111;
+      line-height: 1.5;
+    }
+
+    .skills-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    /* Experience, Projects, Education, Training Items */
+    .entry {
+      margin-bottom: 14px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      gap: 12px;
+    }
+
+    .entry-title {
       font-weight: 700;
-      font-size: 0.92rem;
-      color: var(--primary);
-      gap: 8px;
+      font-size: 10.1pt;
+      color: #000000;
     }
 
-    .item-subheader {
-      font-size: 0.85rem;
-      color: var(--accent);
+    .entry-meta-right {
+      font-size: 9.3pt;
       font-weight: 600;
-      margin-bottom: 3px;
-    }
-
-    .item-date {
-      font-size: 0.82rem;
-      color: #64748b;
-      font-weight: 500;
+      color: #111111;
       white-space: nowrap;
+      text-align: right;
     }
 
-    ul.bullets {
+    .entry-tech {
+      font-size: 9pt;
+      font-style: italic;
+      color: #222222;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .entry-subtitle {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #222222;
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+
+    .entry-desc {
+      color: #111111;
+      margin-top: 2px;
+    }
+
+    /* Bullet Lists */
+    .bullets {
       list-style-type: disc;
-      margin-left: 18px;
-      font-size: 0.85rem;
-      color: #334155;
-      line-height: 1.45;
+      padding-left: 17px;
+      margin-top: 3px;
     }
 
-    ul.bullets li {
+    .bullets li {
+      margin-bottom: 5px;
+      color: #111111;
+      line-height: 1.5;
+    }
+
+    .bullets li:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      font-family: "Consolas", "Courier New", monospace;
+      font-size: 9pt;
+      color: #000000;
+    }
+
+    /* Achievements & Languages */
+    .plain-list {
+      list-style-type: disc;
+      padding-left: 17px;
+    }
+
+    .plain-list li {
+      margin-bottom: 4px;
+      color: #111111;
+    }
+
+    .plain-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .lang-line {
+      color: #111111;
+    }
+
+    /* Page Break & Compact Style for Page 2 */
+    .page-break {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    .page-two-compact {
+      font-size: 9.5pt;
+      line-height: 1.38;
+    }
+
+    .page-two-compact .section {
+      margin-bottom: 9px;
+    }
+
+    .page-two-compact .section-title {
+      font-size: 10.3pt;
+      padding-bottom: 2.5px;
+      margin-bottom: 6px;
+    }
+
+    .page-two-compact .entry {
+      margin-bottom: 5.5px;
+    }
+
+    .page-two-compact .entry-title {
+      font-size: 9.6pt;
+    }
+
+    .page-two-compact .entry-subtitle {
+      font-size: 9pt;
       margin-bottom: 2px;
     }
 
-    .skills-block {
-      font-size: 0.85rem;
-      color: #334155;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      line-height: 1.45;
+    .page-two-compact .bullets {
+      margin-top: 1.5px;
     }
 
-    .skills-block strong {
-      color: var(--primary);
+    .page-two-compact .bullets li {
+      margin-bottom: 1.8px;
+      line-height: 1.36;
     }
 
-    /* Mobile & Tablet Styles */
-    @media (max-width: 768px) {
+    .page-two-compact .plain-list li {
+      margin-bottom: 2.5px;
+      line-height: 1.36;
+    }
+
+    /* ===================================================================
+       RESPONSIVE ALIGNMENT FOR TABLET & MOBILE
+       =================================================================== */
+    @media screen and (max-width: 768px) {
       body {
-        padding: 14px 10px;
+        padding: 12px 10px 30px 10px;
       }
 
       .toolbar {
@@ -249,160 +370,97 @@
         justify-content: center;
       }
 
-      .resume-sheet {
-        padding: 24px 16px;
-        border-radius: 8px;
+      .resume-paper {
+        padding: 28px 20px;
+        border-radius: 6px;
       }
 
-      header {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
+      .name {
+        font-size: 20pt;
       }
 
-      .contact-info {
-        justify-content: center;
-        font-size: 0.84rem;
-        gap: 8px;
-      }
-
-      .item-header {
+      .entry-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 2px;
       }
 
-      .item-date {
-        color: var(--accent);
-        font-size: 0.8rem;
+      .entry-meta-right,
+      .entry-tech {
+        white-space: normal;
+        text-align: left;
+        font-size: 8.8pt;
+        color: #444444;
       }
     }
 
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.55rem;
+    @media screen and (max-width: 480px) {
+      .resume-paper {
+        padding: 20px 14px;
       }
 
-      .resume-avatar {
-        width: 62px;
-        height: 62px;
-        margin: 0 auto;
+      .name {
+        font-size: 18pt;
       }
 
-      .resume-sheet {
-        padding: 18px 12px;
+      .contact-row {
+        gap: 6px 8px;
+        font-size: 9pt;
+      }
+
+      .summary-text {
+        text-align: left;
       }
 
       .section-title {
-        font-size: 0.92rem;
+        font-size: 10.2pt;
       }
 
-      ul.bullets {
-        margin-left: 15px;
-        font-size: 0.82rem;
-      }
-
-      .skills-block {
-        font-size: 0.82rem;
+      .bullets,
+      .plain-list {
+        padding-left: 15px;
       }
     }
 
-    /* Print-specific layout: Exactly 2 Full Pages on A4 */
+    /* ===================================================================
+       PRINT STYLES: STRICTLY 2 CLEAN PAGES ON A4
+       =================================================================== */
     @media print {
       body {
         background: #ffffff !important;
         padding: 0 !important;
-        font-size: 9.2pt !important;
-        line-height: 1.34 !important;
-        color: #1e293b !important;
+        margin: 0 !important;
+        font-size: 9.8pt !important;
       }
 
       .toolbar {
         display: none !important;
       }
 
-      .resume-sheet {
-        padding: 0 !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
+      .resume-paper {
         max-width: 100% !important;
         margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
       }
 
-      header {
-        border-bottom: 1.5px solid var(--primary) !important;
-        padding-bottom: 8px !important;
-        margin-bottom: 10px !important;
-        gap: 16px !important;
+      .entry {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
 
-      .resume-avatar {
-        width: 58px !important;
-        height: 58px !important;
-      }
-
-      h1 {
-        font-size: 1.6rem !important;
-        margin-bottom: 2px !important;
-      }
-
-      .contact-info {
-        font-size: 0.8rem !important;
-        gap: 8px !important;
-      }
-
-      .section {
-        margin-bottom: 10px !important;
-      }
-
-      .section-title {
-        font-size: 0.9rem !important;
-        padding-bottom: 2px !important;
-        margin-bottom: 5px !important;
-        border-bottom-width: 1px !important;
-      }
-
-      .item {
-        margin-bottom: 6px !important;
-      }
-
-      .item-header {
-        font-size: 0.88rem !important;
-      }
-
-      .item-subheader {
-        font-size: 0.82rem !important;
-        margin-bottom: 2px !important;
-      }
-
-      .item-date {
-        font-size: 0.78rem !important;
-      }
-
-      ul.bullets {
-        margin-left: 16px !important;
-        font-size: 0.8rem !important;
-      }
-
-      ul.bullets li {
-        margin-bottom: 1.5px !important;
-      }
-
-      .skills-block {
-        font-size: 0.8rem !important;
-        gap: 2.5px !important;
-      }
-
-      @page {
-        margin: 0.7cm 1cm;
-        size: A4 portrait;
+      .page-break {
+        break-before: page !important;
+        page-break-before: always !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Toolbar -->
+  <!-- TOP WEB TOOLBAR (Hidden in Print) -->
   <div class="toolbar">
     <a href="index.html" class="btn btn-secondary">
       <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
@@ -417,178 +475,215 @@
     </div>
   </div>
 
-  <!-- Printable Resume Paper -->
-  <main class="resume-sheet">
-    <header>
-      <div class="resume-avatar">
-        <img src="assets/images/Ashwinth_k.png" onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" alt="Ashwinth K">
-      </div>
-      <div class="resume-header-info">
-        <h1>ASHWINTH K</h1>
-        <div class="contact-info">
-          <span><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinthkumar003@gmail.com" target="_blank">ashwinthkumar003@gmail.com</a></span>
-          <span>&bull;</span>
-          <span><i class="fa-solid fa-phone"></i> +91 7339053147</span>
-          <span>&bull;</span>
-          <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank">LinkedIn</a></span>
-          <span>&bull;</span>
-          <span><i class="fa-brands fa-github"></i> <a href="https://github.com/Ashwinth-k-3018" target="_blank">GitHub</a></span>
-        </div>
+  <!-- RESUME PAPER CONTAINER -->
+  <main class="resume-paper">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="name">ASHWINTH K</h1>
+      <div class="contact-row">
+        <a class="contact-item" href="mailto:ashwinthkumar003@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          ashwinthkumar003@gmail.com
+        </a>
+        <span class="contact-sep">&bull;</span>
+        <a class="contact-item" href="tel:+917339053147">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          +91 7339053147
+        </a>
+        <span class="contact-sep">&bull;</span>
+        <a class="contact-item" href="https://www.linkedin.com/in/ashwinth-k-91616529b" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          LinkedIn
+        </a>
+        <span class="contact-sep">&bull;</span>
+        <a class="contact-item" href="https://github.com/Ashwinth-k-3018" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+          GitHub
+        </a>
       </div>
     </header>
 
-    <!-- Professional Summary -->
+    <!-- PROFESSIONAL SUMMARY -->
     <section class="section">
       <h2 class="section-title">Professional Summary</h2>
-      <p style="font-size: 0.88rem; color: #334155; text-align: justify;">
-        <strong>Java Full Stack Developer</strong> currently working at <strong>Stackly</strong>, with practical experience developing <strong>Spring Boot REST APIs</strong>, managing <strong>MySQL databases</strong>, and building responsive full-stack web applications. Proficient in Core Java (OOPs, Collections, Multithreading, Exception Handling), Spring Data JPA, JDBC, and SQL optimization. Passionate about writing clean, maintainable code, preventing concurrency bottlenecks, and delivering reliable software for team projects and clients.
+      <p class="summary-text">
+        Java Full Stack &amp; SQL Developer experienced in building enterprise applications, transactional JDBC engines, and normalized MySQL database architectures using Java, Spring Boot, and Hibernate. Skilled in SQL tuning, stored procedures, triggers, ACID-compliant data management, and role-based security for internal business systems, collaborating across teams to deliver reliable enterprise software.
       </p>
     </section>
 
-    <!-- Technical Skills -->
+    <!-- TECHNICAL SKILLS -->
     <section class="section">
       <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-block">
-        <div><strong>Programming Languages:</strong> Java (8/11/17/21), JavaScript (ES6+), SQL, HTML5, CSS3</div>
-        <div><strong>Backend Frameworks &amp; APIs:</strong> Spring Boot, Spring Data JPA, Hibernate ORM, JDBC, Servlets, JSP, RESTful APIs, Spring Security &amp; JWT, Microservices Architecture</div>
-        <div><strong>Database &amp; Storage:</strong> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID Transactions, HikariCP Connection Pooling)</div>
-        <div><strong>Core Computer Science:</strong> Object-Oriented Programming (OOPs), Data Structures, Collections Framework, Multithreading, Exception Handling, MVC Design Pattern</div>
-        <div><strong>Tools &amp; Version Control:</strong> Git, GitHub, Maven, Postman, Eclipse, IntelliJ IDEA, VS Code, Swagger / OpenAPI</div>
-      </div>
+      <ul class="skills-list">
+        <li><span class="skill-label">Programming Languages:</span> Java (8/11/17/21), SQL, JavaScript (ES6+), HTML5, CSS3</li>
+        <li><span class="skill-label">Backend Frameworks &amp; APIs:</span> Spring Boot, Spring Data JPA, Hibernate ORM, JDBC, Servlets, JSP, RESTful APIs, Spring Security &amp; JWT, Microservices Architecture</li>
+        <li><span class="skill-label">Database &amp; Data Management:</span> MySQL (3NF Normalization, Complex Joins, Indexing, Stored Procedures, Triggers, Views, ACID Transactions, HikariCP Connection Pooling)</li>
+        <li><span class="skill-label">Core Computer Science:</span> Object-Oriented Programming (OOPs), Data Structures, Collections Framework, Multithreading, Exception Handling, MVC Design Pattern</li>
+        <li><span class="skill-label">Tools &amp; Version Control:</span> Git, GitHub, Maven, Postman, Eclipse, IntelliJ IDEA, VS Code, Swagger / OpenAPI</li>
+      </ul>
     </section>
 
-    <!-- Work Experience -->
+    <!-- WORK EXPERIENCE -->
     <section class="section">
       <h2 class="section-title">Work Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Java Full Stack Developer</span>
+          <span class="entry-meta-right">May 2026 – Present</span>
+        </div>
+        <div class="entry-subtitle">Stackly &bull; Chennai, India</div>
+        <ul class="bullets">
+          <li>Architected and implemented enterprise-grade RESTful microservices with Spring Boot, Spring Data JPA, and MySQL.</li>
+          <li>Optimized relational database interactions, designing stored procedures, composite B-Tree indexes, and transactional queries that reduced query response times significantly.</li>
+          <li>Enforced stateless role-based security filters using Spring Security and JSON Web Tokens (JWT).</li>
+          <li>Ensured strict ACID compliance and zero deadlock conditions across high-throughput data mutations.</li>
+          <li>Collaborated in agile development sprints, conducting peer code reviews and integrating end-to-end APIs.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Intern – Gen AI Connect Summit and Expo</span>
+          <span class="entry-meta-right">April 2024 – June 2024</span>
+        </div>
+        <div class="entry-subtitle">StartNet Ventures Private Limited &bull; Salem, India</div>
+        <ul class="bullets">
+          <li>Assisted in building AI-based business solutions leveraging Generative AI tools (HeyGen) and automated workflows.</li>
+          <li>Worked within cross-functional teams to deliver enterprise technical objectives and prototype demos.</li>
+          <li>Gained real-world exposure to software engineering lifecycles and client stakeholder communication.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PAGE BREAK: START OF PAGE 2 -->
+    <div class="page-break page-two-compact">
       
-      <div class="item">
-        <div class="item-header">
-          <span>Java Full Stack Developer</span>
-          <span class="item-date">May 2025 &ndash; Present (Dec 2025)</span>
+      <!-- KEY ENGINEERING PROJECTS -->
+      <section class="section">
+        <h2 class="section-title">Key Engineering Projects</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Libraries Book Management System</span>
+            <span class="entry-tech">Spring Boot, Spring Data JPA, MySQL, REST APIs</span>
+          </div>
+          <ul class="bullets">
+            <li>Built a full-stack enterprise catalog tracking book inventory, lending life cycles, and automated fine calculations.</li>
+            <li>Applied optimistic locking (<code>@Version</code>) to prevent concurrency collisions when multiple patrons borrow the last copy.</li>
+          </ul>
         </div>
-        <div class="item-subheader">Stackly &bull; Chennai, India</div>
-        <ul class="bullets">
-          <li>Develop and maintain RESTful APIs and backend services using Spring Boot, Spring Data JPA, and MySQL.</li>
-          <li>Design normalized database tables, authoring stored procedures, triggers, and B-Tree indexes to speed up slow queries.</li>
-          <li>Implement secure user authentication and role-based permissions with Spring Security and JWT tokens.</li>
-          <li>Manage transactional data operations using <code>@Transactional</code> and row-level locking to maintain ACID consistency under concurrent requests.</li>
-          <li>Collaborate in agile sprints with frontend engineers and QA, conducting code reviews and verifying API contracts with Postman.</li>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Vehicle Rent Management System</span>
+            <span class="entry-tech">Spring Boot, Spring Security, JWT, Hibernate, MySQL</span>
+          </div>
+          <ul class="bullets">
+            <li>Engineered an end-to-end leasing engine with distinct customer/admin roles and automated date-range overlap detection.</li>
+            <li>Constructed dynamic pricing algorithms computing daily, weekly, and late return penalties.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Mobile Recharge Application</span>
+            <span class="entry-tech">Spring Boot, Transaction Management, MySQL</span>
+          </div>
+          <ul class="bullets">
+            <li>Implemented atomic transaction processing with idempotency keys and mock payment gateway reconciliation.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Banking Management System</span>
+            <span class="entry-tech">Java, JDBC, MySQL, PreparedStatements</span>
+          </div>
+          <ul class="bullets">
+            <li>Architected an ACID-compliant fund transfer engine using manual JDBC commit/rollback control and row-level locking.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Relational Database Architecture Projects</span>
+            <span class="entry-tech">MySQL 8.0, Stored Procedures, Triggers, 3NF</span>
+          </div>
+          <ul class="bullets">
+            <li><strong>Banking Scenario:</strong> Designed 3NF schema with stored procedures (<code>sp_TransferFunds</code>) and automated audit triggers.</li>
+            <li><strong>Customer Order DB:</strong> Modeled complex multi-table joins, inventory reservation triggers, and sales aggregation views.</li>
+            <li><strong>Railway Reservation DB:</strong> Engineered train station route graphs, berth quota partitions (RAC/WL), and PNR resolvers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Bachelor of Engineering (B.E.) – Computer Science and Engineering</span>
+            <span class="entry-meta-right">Nov 2021 – May 2025</span>
+          </div>
+          <div class="entry-subtitle">Salem College of Engineering and Technology &bull; Salem, India &bull; CGPA: 8.3 / 83%</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Higher Secondary School Certificate (HSC) – 75%</span>
+            <span class="entry-meta-right">May 2021</span>
+          </div>
+          <div class="entry-subtitle">Sri Ramakrishna Boys Matric Hr. Sec School &bull; Perambalur, India</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Secondary School Leaving Certificate (SSLC / 10th) – 56%</span>
+            <span class="entry-meta-right">May 2019</span>
+          </div>
+          <div class="entry-subtitle">Aruna Hr. Sec. School &bull; Eraiyur, India</div>
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL TRAINING -->
+      <section class="section">
+        <h2 class="section-title">Professional Training</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Java Full Stack Development Training</span>
+            <span class="entry-meta-right">May 2025 – May 2026</span>
+          </div>
+          <div class="entry-subtitle">QSpiders &bull; Chennai, India</div>
+          <ul class="bullets">
+            <li>Completed training in Core Java, Advanced Java (JSP, Servlets, JDBC), and Spring Boot.</li>
+            <li>Frontend: HTML, CSS, JavaScript, React.</li>
+            <li>Database: MySQL.</li>
+            <li>Hands-on practice with real-time projects.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section class="section">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="plain-list">
+          <li><strong>Top Brains Hackathon – 10th Place:</strong> Top Brains. Secured 10th position competing with an Advanced Java algorithmic problem-solving architecture under timed competition constraints.</li>
+          <li><strong>Gen AI Connect Summit and Expo:</strong> StartNet Ventures Private Limited, Salem. Attended sessions on cutting-edge AI advancements and networked with industry professionals.</li>
+          <li><strong>Expertise in Website Designing:</strong> Connect Infosystem, Chennai. Gained insight into modern web design trends, UI/UX aesthetics, and responsive performance practices.</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="item">
-        <div class="item-header">
-          <span>Intern &ndash; Gen AI Connect Summit and Expo</span>
-          <span class="item-date">April 2024 &ndash; June 2024</span>
-        </div>
-        <div class="item-subheader">StartNet Ventures Private Limited &bull; Salem, India</div>
-        <ul class="bullets">
-          <li>Explored and evaluated Generative AI tools (including HeyGen) for automated video and content generation workflows.</li>
-          <li>Worked with cross-functional teammates to prepare technical demonstrations and presentations for summit attendees.</li>
-          <li>Gained practical exposure to agile milestone deadlines, team communication, and presenting software to stakeholders.</li>
-        </ul>
-      </div>
-    </section>
+      <!-- LANGUAGES -->
+      <section class="section">
+        <h2 class="section-title">Languages</h2>
+        <p class="lang-line"><strong>English</strong> (Professional Working Proficiency) &bull; <strong>Tamil</strong> (Native)</p>
+      </section>
 
-    <!-- Key Projects -->
-    <section class="section">
-      <h2 class="section-title">Key Engineering Projects</h2>
-      
-      <div class="item">
-        <div class="item-header">
-          <span>Libraries Book Management System</span>
-          <span class="item-date">Spring Boot, Spring Data JPA, MySQL, REST APIs</span>
-        </div>
-        <ul class="bullets">
-          <li>Built a full-stack catalog tracking book inventory, lending life cycles, and automated fine calculations.</li>
-          <li>Applied optimistic locking (@Version) to prevent concurrency collisions when multiple patrons borrow the last copy.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Vehicle Rent Management System</span>
-          <span class="item-date">Spring Boot, Spring Security, JWT, Hibernate, MySQL</span>
-        </div>
-        <ul class="bullets">
-          <li>Engineered end-to-end leasing engine with distinct customer/admin roles and automated date-range overlap detection.</li>
-          <li>Constructed dynamic pricing algorithms computing daily, weekly, and late return penalties.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Mobile Recharge Application</span>
-          <span class="item-date">Spring Boot, Transaction Management, MySQL</span>
-        </div>
-        <ul class="bullets">
-          <li>Implemented atomic transaction processing with idempotency keys and mock payment gateway reconciliation.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Banking Management System</span>
-          <span class="item-date">Java, JDBC, MySQL, PreparedStatements</span>
-        </div>
-        <ul class="bullets">
-          <li>Built an ACID-compliant fund transfer engine using manual JDBC commit/rollback control, PIN hashing, and row-level locking.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Relational Database Architecture Projects</span>
-          <span class="item-date">MySQL 8.0, Stored Procedures, Triggers, 3NF</span>
-        </div>
-        <ul class="bullets">
-          <li><strong>Banking Scenario:</strong> Designed 3NF schema with stored procedures (`sp_TransferFunds`) and automated audit triggers.</li>
-          <li><strong>Customer Order DB:</strong> Modeled complex multi-table joins, inventory reservation triggers, and sales aggregation views.</li>
-          <li><strong>Railway Reservation DB:</strong> Engineered train station route graphs, berth quota partitions (RAC/WL), and PNR resolvers.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Education & Training -->
-    <section class="section">
-      <h2 class="section-title">Education &amp; Professional Training</h2>
-      
-      <div class="item">
-        <div class="item-header">
-          <span>Bachelor of Engineering (B.E.) &ndash; Computer Science and Engineering</span>
-          <span class="item-date">Nov 2021 &ndash; May 2025</span>
-        </div>
-        <div class="item-subheader">Salem College of Engineering and Technology &bull; Salem, India &bull; <strong>CGPA: 8.3 / 83%</strong></div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Java Full Stack Development Training</span>
-          <span class="item-date">May 2025 &ndash; February 2026</span>
-        </div>
-        <div class="item-subheader">QSpiders &bull; Chennai, India</div>
-        <p style="font-size: 0.85rem; color: #475569;">Hands-on training in Core Java, Advanced Java (JSP, Servlets, JDBC), Spring Boot, MySQL, and Web Design.</p>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Higher Secondary School Certificate (HSC) &ndash; 75%</span>
-          <span class="item-date">June 2019 &ndash; April 2021</span>
-        </div>
-        <div class="item-subheader">Sri Ramakrishna Boys Matric Hr. Sec School &bull; Perambalur, India</div>
-      </div>
-    </section>
-
-    <!-- Achievements & Languages -->
-    <section class="section">
-      <h2 class="section-title">Achievements &amp; Languages</h2>
-      <div style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
-        <p><strong>Top Brains Hackathon &ndash; 10th Place:</strong> Top Brains. Secured 10th position competing with an Advanced Java algorithmic problem-solving architecture under timed competition constraints.</p>
-        <p><strong>Gen AI Connect Summit and Expo:</strong> StartNet Ventures Private Limited, Salem. Explored AI tools and demonstrated automated content workflows to visitors.</p>
-        <p><strong>Expertise in Website Designing:</strong> Connect Infosystem, Chennai. Completed certification focused on responsive web design and mobile-first layouts.</p>
-        <p style="margin-top: 4px;"><strong>Languages:</strong> English (Professional Working Proficiency), Tamil (Native).</p>
-      </div>
-    </section>
+    </div><!-- END PAGE 2 -->
 
   </main>
 
